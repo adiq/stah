@@ -87,4 +87,4 @@ def about(code, input):
 def issue(code, input):
     code.reply('Having an issue with {b}' +
                code.nick + '{b}? Post a bug report here:')
-    code.say('https://github.com/Liamraystanley/Code/issues/new')
+    code.say('https://github.com/adiq/stah/issues/new')

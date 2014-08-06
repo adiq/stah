@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 """
+Stah Copyright (C) 2014 Adrian Zmenda
 Code Copyright (C) 2012-2014 Liam Stanley
 triggers.py - Code IRC Raw Trigger Module
 https://www.liamstanley.io/Code.git

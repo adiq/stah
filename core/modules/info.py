@@ -29,7 +29,7 @@ def version(code, input):
         code.say(' - {b}Commit{b}: %s ({b}%s{b})' % (commit, message))
         code.say(' - {b}Author{b}: %s' % author)
         code.say(' - {b}Date{b}: %s' % date)
-        code.say(' - {b}Source{b}: https://github.com/Liamraystanley/Code/')
+        code.say(' - {b}Source{b}: https://github.com/adiq/stah/')
     except:
         code.say(
             '%s does not use Github file management. Unable to determine version.' %
@@ -51,7 +51,7 @@ def ctcp_version(code, input):
 def ctcp_source(code, input):
     code.write(
         ('NOTICE',
-         input.nick), '\x01SOURCE https://github.com/Liamraystanley/Code/\x01'
+         input.nick), '\x01SOURCE https://github.com/adiq/stah/\x01'
     )
     code.write(
         ('NOTICE', input.nick), '\x01SOURCE\x01'

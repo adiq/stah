@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 """
+Stah Copyright (C) 2014 Adrian Zmenda
 Code Copyright (C) 2012-2014 Liam Stanley
 bot.py - Code IRC Bot
 https://www.liamstanley.io/Code.git
@@ -32,7 +33,7 @@ def decode(bytes):
     return text
 
 
-class Code(irc.Bot):
+class Stah(irc.Bot):
 
     def __init__(self, raw_config):
         self.load = []
@@ -158,7 +159,7 @@ class Code(irc.Bot):
                 self.variables[name] = obj
 
     def wrapped(self, origin, text, match):
-        class CodeWrapper(object):
+        class StahWrapper(object):
 
             def __init__(self, code):
                 self.bot = code
@@ -175,7 +176,7 @@ class Code(irc.Bot):
                     return lambda msg: self.bot.action(sender, msg)
                 return getattr(self.bot, attr)
 
-        return CodeWrapper(self)
+        return StahWrapper(self)
 
     def input(self, origin, text, bytes, match, event, args):
         class CommandInput(unicode):

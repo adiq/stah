@@ -4,7 +4,7 @@ from util.hook import *
 
 @hook(cmds=['rock', 'paper', 'scissors'], rate=15)
 def rps(code, input):
-    """Play some Rock-Paper-Scissors with Code!"""
+    """Play some Rock-Paper-Scissors with Stah!"""
     text = input.group().lower()
     text = text.split()
     cpu = random.randint(1, 3)

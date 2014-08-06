@@ -20,7 +20,7 @@ function login() {
         })
         .fail(function(data) {
             $('#password-text').html(
-                'Code - Python IRC Bot<br><font color="red" size="3">Incorrect password</font><br>'
+                'Stah - Python IRC Bot<br><font color="red" size="3">Incorrect password</font><br>'
             );
             $("#password-box").addClass("has-error");
             $("#password").val('');

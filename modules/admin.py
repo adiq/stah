@@ -97,7 +97,7 @@ def announce(code, input):
 
 @hook(cmds=['blocks'], ex='blocks add nick MyNameIsSpammer', thread=False, admin=True, args=True)
 def blocks(code, input):
-    '''Command to add/delete user records, for a filter system. This is to prevent users from abusing Code.'''
+    '''Command to add/delete user records, for a filter system. This is to prevent users from abusing Stah.'''
     if not os.path.isfile('blocks'):
         blocks = open('blocks', 'w')
         blocks.write('\n')

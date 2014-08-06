@@ -2,7 +2,7 @@ import random
 from util.hook import *
 
 
-@hook(cmds=['sm', 'sexymeter'], ex='sm Code', rate=20)
+@hook(cmds=['sm', 'sexymeter'], ex='sm Stah', rate=20)
 def sexymeter(code, input):
     """Rate people in terms of sexy, and not!"""
     text = input.group().split()

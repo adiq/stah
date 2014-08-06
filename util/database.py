@@ -12,7 +12,7 @@ def get(bot, module=False):
         fn = mod_name % (bot, str(module))
     else:
         fn = db_name % bot
-    module_filename = os.path.join(os.path.expanduser('~/.code'), fn)
+    module_filename = os.path.join(os.path.expanduser('~/.stah'), fn)
     if not os.path.exists(module_filename):
         return False
     with open(module_filename, 'r') as f:
@@ -31,7 +31,7 @@ def set(bot, data, module=False):
         fn = mod_name % (bot, str(module))
     else:
         fn = db_name % bot
-    module_filename = os.path.join(os.path.expanduser('~/.code'), fn)
+    module_filename = os.path.join(os.path.expanduser('~/.stah'), fn)
     with open(module_filename, 'w') as f:
         if isinstance(data, dict):
             f.write(json.dumps(data))

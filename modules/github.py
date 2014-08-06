@@ -5,7 +5,7 @@ repo_api = 'https://api.github.com/repos/%s'  # Username/Repo
 user_api = 'https://api.github.com/users/%s'  # Username
 
 
-@hook(cmds=['github', 'git'], ex='github Liamraystanley/Code', rate=15, args=True)
+@hook(cmds=['github', 'git'], ex='github adiq/stah', rate=15, args=True)
 def github(code, input):
     """github <user}user/repo> - Get username data, or user/repo data from Github"""
     syntax = 'Syntax: \'.github <user|user/repo>\''

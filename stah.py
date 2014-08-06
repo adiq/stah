@@ -15,7 +15,7 @@ from multiprocessing import Process
 from core import bot
 from util import output
 
-dotdir = os.path.expanduser('~/.code')
+dotdir = os.path.expanduser('~/.stah')
 configv = 7
 threads = []
 
@@ -56,9 +56,9 @@ def parse_json(filename):
 
 def setupServer(server):
     defaults = {
-        'website': 'https://www.liamstanley.io/Code.git',
-        'name': '\x0307Code -- Python IRC Bot',
-        'user': 'code',
+        'website': 'https://github.com/adiq/stah',
+        'name': '\x0307Stah -- Python IRC Bot',
+        'user': 'stah',
         'port': 6667,
         'server_password': None
     }

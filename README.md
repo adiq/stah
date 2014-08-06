@@ -1,28 +1,32 @@
-Code the flexible Python IRC Bot
+Stah - IRC Bot
 ================================
 
-Code (on #L @ irc.esper.net) is a open source python IRC bot. Code can run on any operating system that supports Python 2.7.
+Stah is a fork of awesome [Code](https://github.com/Liamraystanley/Code) project.
+
+Stah is a open source python IRC bot working in polish language.
+Stah is modified for use on #wn (freenode) channel.
+
+Can run on any platform with python 2.7.
+
 
 Features
 -------- 
 ________
 
-Code is packed full of features ranging from raw IRC functions to modules that can be unloaded and loaded with ease. Some features include:
-
 Fast & light weight
-- Code is very small, so it won't take up resources.
+- Very small, so it won't take up resources.
 
 Load & unload modules
-- Code has the ability to load user defined IRC modules, that are pre-made or ones that you create. Code also can live-reload modules for active and fast development.
+- Ability to load user defined IRC modules, that are pre-made or ones that you create. You can also live-reload modules for active and fast development.
 
 Very user friendly
-- It is very easy to install and run Code, even if you have no knowledge of ever running a IRC bot before. Help commands also help you with specific documentation for almost every command.
+- It is very easy to install and run Stah, even if you have no knowledge of ever running a IRC bot before. Help commands also help you with specific documentation for almost every command.
 
 Easy to use API
-- When creating your own modules, it is always very easy to have a fully documented API and easy to understand functions. See the [Wiki](https://github.com/Liamraystanley/Code/wiki)
+- When creating your own modules, it is always very easy to have a fully documented API and easy to understand functions. See the [Code Wiki Pages](https://github.com/Liamraystanley/Code/wiki)
 
 Open-Source
-- Found a bug, feature, or technical support/advice? You can always navigate to the [Github](https://github.com/Liamraystanley/Code/issues) page to make requests and post bugs. Heck, even fork Code and make your own modifications!
+- Found a bug, feature, or technical support/advice? You can always navigate to the Issues page to make requests and post bugs. Heck, even fork Stah and make your own modifications!
 
 Configuration
 - Almost ever single aspect of the bot is configurable to your likings. Don't like a module? Remove it. Like only ONE module? Whitelist it!
@@ -31,14 +35,12 @@ Installation - How do I install?
 ================================
 ________________________________
 
-**If you have any issues during the install, feel free to head to http://chat.liamstanley.io/ to get help**
-
 
 Unix & Unix-like OS: 
 --------------------
 
     apt-get install python2.7 git screen
-    git clone https://github.com/Liamraystanley/Code.git
+    git clone https://github.com/adiq/stah.git
     cp -rf example.json config.json
     nano config.json
     python code.py
@@ -56,11 +58,11 @@ Windows:
 
 
     1) Make sure you have Python installed `http://www.python.org/download/releases/2.7.5/`
-    2) Download Code here: `https://github.com/Liamraystanley/Code/zipball/master` and unzip it.
-    3) Configure Code's configuration file, located in the bot directory.
+    2) Download Code here: `https://github.com/adiq/stah/zipball/master` and unzip it.
+    3) Configure Stah's configuration file, located in the bot directory.
        - Copy and rename `example.json` to `config.json`
        - Note, it's best NOT to use the Windows notepad, rather, use Notepad++.
-    3) You can open up command prompt, `cd` to Codes directory, and execute Code with `python code.py`.
+    3) You can open up command prompt, `cd` to Stah directory, and execute Stah with `python stah.py`.
        - Note, if command prompt says that `python` is not a internal or external command/program,
          that means Python failed to be added to your system-wide %PATH% file.
          So, you need to add it to the %PATH% variable.
@@ -69,6 +71,10 @@ Licensing
 ---------
 _________
 
+Stah is build on top of awesome Code project. Big gratz to all Code contributors.
+Stah is sublicensed on same terms as Code.
+
+Stah Copyright (C) 2014 Adrian Zmenda
 Code Copyright (C) 2012-2014 Liam Stanley
     `Eiffel Forum License, version 2`
     

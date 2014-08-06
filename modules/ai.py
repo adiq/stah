@@ -35,7 +35,7 @@ def on(code, input):
 
 @hook(cmds=['state', 'aistate'], priority='high')
 def state(code, input):
-    """check the AI state of Code"""
+    """check the AI state of Stah"""
     global aistate
     if aistate:
         code.say('{b}{green}It is on.')

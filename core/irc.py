@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 """
+Stah Copyright (C) 2014 Adrian Zmenda
 Code Copyright (C) 2012-2014 Liam Stanley
 irc.py - Code A Utility IRC Bot
 https://www.liamstanley.io/Code.git
@@ -317,7 +318,7 @@ class Bot(asynchat.async_chat):
     def format(self, message, shorten_urls=True):
         '''
             formatting to support color/bold/italic/etc assignment
-            and URL shortening in Codes responses
+            and URL shortening in Stahs responses
         '''
         message = uncharset(message)
         if self.config('shorten_urls') and shorten_urls:
